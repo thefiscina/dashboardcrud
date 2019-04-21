@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, FormBuilder } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+
 import { appRoutes } from './routes';
 import { HttpClientModule } from '@angular/common/http';
 // Import NgMasonryGridModule
@@ -17,6 +17,10 @@ import { PainelLateralComponent } from './components/painel-lateral/painel-later
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PrincipalComponent } from './pages/principal/principal.component';
+import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +29,9 @@ import { PrincipalComponent } from './pages/principal/principal.component';
     PainelLateralComponent,
     HeaderComponent,
     FooterComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    LoginComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
