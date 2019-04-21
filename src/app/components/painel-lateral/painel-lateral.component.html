@@ -10,21 +10,21 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false"> <i class="menu-icon fa  fa-edit"></i>Posts</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Realizar postagem</a></li>
-                        <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Cadastrar colaborador</a></li>
-                        <li><i class="fa fa-thumbs-up"></i><a href="ui-tabs.html">Aprovar postagens</a></li>
-                        <li><i class="fa  fa-dashboard"></i><a href="ui-cards.html">Estatisticas</a></li>
+                        <li><i class="fa fa-puzzle-piece"></i><a [routerLink]="[ '/cadastro-postagem' ]"> Realizar postagem</a></li>
+                        <li><i class="fa fa-id-badge"></i><a [routerLink]="[ '/cadastrar-colaborador' ]">Cadastrar colaborador</a></li>
+                        <li><i class="fa fa-thumbs-up"></i><a [routerLink]="[ '/aprovar-postagem' ]">Aprovar postagens</a></li>
+                        <li><i class="fa  fa-dashboard"></i><a [routerLink]="[ '/path' ]">Estatisticas</a></li>
                     </ul>
-                </li>       
-                
+                </li>
+
                 <li class="menu-title">Configurações</li><!-- /.menu-title -->
                 <li class="menu-item-has-children dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false"> <i class="menu-icon fa fa-user"></i>Perfil</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-gears"></i><a href="ui-buttons.html">Alterar cadastros</a></li>                 
+                        <li><i class="fa fa-gears"></i><a [routerLink]="[ '/path' ]">Alterar cadastros</a></li>
                     </ul>
-                </li>    
+                </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
